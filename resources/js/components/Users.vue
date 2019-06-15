@@ -113,10 +113,14 @@
                 axios.get("api/user").then(({data}) => (this.users = data.data));
             },
             createUser(){
-                this.$progress.start();
-                // console.log(this.$progress);
+                // this.$progress.start();
                 this.form.post('api/user');
-                this.$pro;
+                $('#addNew').modal('hide');
+                toast.fire({
+                    type:'success',
+                    title:'user created in successfully'
+                });
+                // this.$progress.finish();
             }
         },
         created() {
