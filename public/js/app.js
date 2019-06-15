@@ -1902,6 +1902,7 @@ __webpack_require__.r(__webpack_exports__);
     createUser: function createUser() {
       // this.$progress.start();
       this.form.post('api/user');
+      Fire.$emit('AfterCreate');
       $('#addNew').modal('hide');
       toast.fire({
         type: 'success',
@@ -1913,10 +1914,10 @@ __webpack_require__.r(__webpack_exports__);
     var _this2 = this;
 
     this.loadUsers();
-    setInterval(function () {
-      return _this2.loadUsers();
-    }, 5000);
-    console.log('Component mounted.');
+    Fire.$on('AfterCreate', function () {
+      _this2.loadUsers();
+    }); // setInterval(() => this.loadUsers(), 5000);
+    // console.log('Component mounted.')
   }
 });
 
@@ -74035,6 +74036,7 @@ Vue.filter('upText', function (text) {
 Vue.filter('myDate', function (created) {
   return moment__WEBPACK_IMPORTED_MODULE_0___default()(created).format('MMMM Do YYYY');
 });
+window.Fire = new Vue();
 var app = new Vue({
   el: '#app',
   router: router
