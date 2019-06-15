@@ -125,6 +125,7 @@
         },
         created() {
             this.loadUsers();
+            setInterval(() => this.loadUsers(), 5000);
             console.log('Component mounted.')
         }
     }
