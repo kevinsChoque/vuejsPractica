@@ -95,6 +95,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </router-link>
             </li>
             <li class="nav-item">
+              <router-link to="/developer" class="nav-link">
+                  <i class="fas fa-cogs nav-icon"></i>
+                  <p>developers</p>
+              </router-link>
+            </li>
+            <li class="nav-item">
                 <router-link to="/profile" class="nav-link">
                     <i class="fas fa-user-tie nav-icon orange"></i>
                     <p>Profile</p>
