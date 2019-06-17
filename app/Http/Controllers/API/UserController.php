@@ -45,24 +45,25 @@ class UserController extends Controller
         return Users::create($request->all());
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+    public function updateProfile(Request $request)
+    {
+        $user = Users::findOrFail(1);
+        return $request->photo;
+        // return ['message' => "updateProfile entro"];
+
+    }
+
+    public function profile()
+    {
+        return Users::findOrFail(1);
+        // return ['message' => "profile entro"];
+    }
+
     public function show($id)
     {
         //
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, $id)
     {
         $user = Users::findOrFail($id);
@@ -78,12 +79,6 @@ class UserController extends Controller
         return['message' => 'updated the user info'];
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function destroy($id)
     {
         $user = Users::findOrFail($id);
