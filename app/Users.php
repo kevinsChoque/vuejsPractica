@@ -11,6 +11,6 @@ class Users extends Model
 
     protected $table = 'user';
     protected $fillable = [
-        'name', 'email','password'
+        'name', 'email','password','photo'
     ];
 }

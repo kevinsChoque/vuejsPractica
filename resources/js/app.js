@@ -26,7 +26,9 @@ window.toast = toast;
 window.Form = Form;
 Vue.component(HasError.name, HasError)
 Vue.component(AlertError.name, AlertError)
-
+//
+Vue.component('pagination', require('laravel-vue-pagination'));
+//
 import VueRouter from 'vue-router';
 Vue.use(VueRouter);
 
@@ -77,5 +79,20 @@ Vue.component(
 //
 const app = new Vue({
     el: '#app',
-    router
+    router,
+    data:{
+        search:''
+    },
+    methods:{
+        // searchit(){
+        //     Fire.$emit('searching');
+        // }
+        searchit:_.debounce(() => {
+            Fire.$emit('searching');
+        },2000),
+
+        printme(){
+            window.print();
+        }
+    }
 });

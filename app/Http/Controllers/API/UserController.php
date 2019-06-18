@@ -15,7 +15,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        return Users::latest()->paginate(10);
+        return Users::latest()->paginate(2);
     }
 
     /**
@@ -48,8 +48,37 @@ class UserController extends Controller
     public function updateProfile(Request $request)
     {
         $user = Users::findOrFail(1);
-        return $request->photo;
-        // return ['message' => "updateProfile entro"];
+
+        $this->validate($request,[
+            'name' => 'required|string|max:191',
+            'email' => 'required|string|email|max:191|unique:user,email,'.$user->id,
+            'password' => 'sometimes|required|min:6'
+        ]);
+
+        $currentPhoto = $user->photo;
+
+        if($request->photo != $currentPhoto)
+        {
+            $name = time().'.' . explode('/', explode(':', substr($request->photo, 0, strpos($request->photo, ';')))[1])[1];
+            \Image::make($request->photo)->save(public_path('img/profile/').$name);
+
+            $request->merge(['photo' => $name]);
+            
+            $userPhoto = public_path('img/profile/').$currentPhoto;
+            // return 'esto es ->'.$currentPhoto;
+            if(file_exists($userPhoto))
+            {
+                @unlink($userPhoto);
+            }
+        }
+
+        // no me servira ya que no estoy trabajando con hash
+        // if(!empty($request->password)){
+        //     $request->merge(['password' => Hash::make($request['password'])]);
+        // }
+        // return $request->all();
+        $user->update($request->all());
+        return ['message' => "Success"];
 
     }
 
@@ -84,5 +113,17 @@ class UserController extends Controller
         $user = Users::findOrFail($id);
         $user->delete();
         return ['message' => 'user deleted'];
+    }
+
+    public function search(){
+        if ($search = \Request::get('q')) {
+            $users = Users::where(function($query) use ($search){
+                $query->where('name','LIKE',"%$search%")
+                        ->orWhere('email','LIKE',"%$search%");
+            })->paginate(2);
+        }else{
+            $users = Users::latest()->paginate(5);
+        }
+        return $users;
     }
 }
