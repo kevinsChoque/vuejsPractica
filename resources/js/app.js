@@ -39,11 +39,16 @@ Vue.use(VueRouter);
 //   height: '3px'
 // });
 
+Vue.component('crud-formulario', require('./components/CrudConVariosComp/Formulario.vue').default);
+Vue.component('crud-tabla-usuarios', require('./components/CrudConVariosComp/TablaUsuarios.vue').default);
+
 let routes = [
     { path: '/dashboard', component: require('./components/Dashboard.vue').default },
     { path: '/developer', component: require('./components/Developer.vue').default },
     { path: '/users', component: require('./components/Users.vue').default },
-    { path: '/profile', component: require('./components/Profile.vue').default }
+    { path: '/profile', component: require('./components/Profile.vue').default },
+
+    { path: '/EjercicioLima', component: require('./components/CrudConVariosComp/DescripcionEjercicio.vue').default },
   ]
 
 const router = new VueRouter({

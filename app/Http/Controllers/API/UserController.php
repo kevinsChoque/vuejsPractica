@@ -5,6 +5,8 @@ namespace App\Http\Controllers\API;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Users;
+use App\CrudUsuario;
+use App\CrudProfesion;
 
 class UserController extends Controller
 {
@@ -125,5 +127,72 @@ class UserController extends Controller
             $users = Users::latest()->paginate(5);
         }
         return $users;
+    }
+
+    public function guardarUser(Request $request)
+    {
+        if($request->avatar != '')
+        {
+            $name = time().'.' . explode('/', explode(':', substr($request->avatar, 0, strpos($request->avatar, ';')))[1])[1];
+
+            \Image::make($request->avatar)->save(public_path('img/profile/').$name);
+
+            $request->merge(['avatar' => $name]);
+        }
+        // dd($request->avatar);
+        return CrudUsuario::create($request->all());
+    }
+
+    public function listarProfession()
+    {
+        return CrudProfesion::get();
+        // return ['message' => 'listar todos los usu'];
+    }
+
+    public function listarUsuarios()
+    {
+        // return CrudUsuario::get();
+        return CrudUsuario::latest()->paginate(2);
+    }
+
+    public function eliminarUsuario(Request $request)
+    {
+        $user = CrudUsuario::findOrFail($request->id)->delete();
+        return ['message' => 'se elimino a ese'];
+    }
+
+    public function actualizarUsuario(Request $request,$id)
+    {
+        $user = CrudUsuario::findOrFail($id);
+        if(is_null($user->avatar) && strlen($request->avatar) > 200)
+        {
+            $name = time().'.' . explode('/', explode(':', substr($request->avatar, 0, strpos($request->avatar, ';')))[1])[1];
+
+            \Image::make($request->avatar)->save(public_path('img/profile/').$name);
+
+            $request->merge(['avatar' => $name]);
+
+            // return ['message' => 'si'];
+        }
+
+        if(!is_null($user->avatar) && strlen($request->avatar) > 200)
+        {
+            $userPhoto = public_path('img/profile/').$user->avatar;
+            // return 'esto es ->'.$currentPhoto;
+            if(file_exists($userPhoto))
+            {
+                @unlink($userPhoto);
+            }
+
+            $name = time().'.' . explode('/', explode(':', substr($request->avatar, 0, strpos($request->avatar, ';')))[1])[1];
+
+            \Image::make($request->avatar)->save(public_path('img/profile/').$name);
+
+            $request->merge(['avatar' => $name]);
+        }
+        
+        $user->update($request->all());
+
+        return ['message' => 'el usuario a sido actualizado al tope'];
     }
 }

@@ -22,3 +22,9 @@ Route::apiResources(['user'=>'API\UserController']);
 Route::get('profile','API\UserController@profile');
 Route::put('profile','API\UserController@updateProfile');
 Route::get('findUser','API\UserController@search');
+//crud-lima
+Route::post('guardarUser','API\UserController@guardarUser');
+Route::get('listarProfession','API\UserController@listarProfession');
+Route::get('listarUsuarios','API\UserController@listarUsuarios');
+Route::delete('eliminarUsuario/{id}','API\UserController@eliminarUsuario');
+Route::put('actualizarUsuario/{id}','API\UserController@actualizarUsuario');
