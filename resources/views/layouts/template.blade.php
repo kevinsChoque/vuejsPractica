@@ -9,7 +9,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <title>AdminLTE 3 | Starter</title>
+  <title>DOCENTE</title>
   <meta name="csrf-token" value="{{ csrf_token() }}" />
 {{-- <link rel="stylesheet" href="/css/app.css"> --}}
 <link href="{{ mix('css/app.css') }}" type="text/css" rel="stylesheet" />
@@ -45,7 +45,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <a href="index3.html" class="brand-link">
       <img src="{{asset('img/img2.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
-      <span class="brand-text font-weight-light">AdminLTE 3</span>
+      <span class="brand-text font-weight-light">DOCENTE</span>
     </a>
 
     <!-- Sidebar -->
@@ -134,8 +134,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Main content -->
     <div class="content">
       <div class="container-fluid">
-        
-        <router-view></router-view>
+        <router-view>
+        </router-view>
         {{-- <vue-progress-bar></vue-progress-bar> --}}
         <!-- /.row -->
       </div><!-- /.container-fluid -->

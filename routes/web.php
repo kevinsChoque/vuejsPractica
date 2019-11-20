@@ -12,9 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('login.login');
 });
-
+// Route::get('/ingresar', function () {
+//     return view('welcome');
+// });
+Route::post('/ingresar','HomeController@actionIngresar');
 Route::get('/invoice', function () {
     return view('invoice');
 });

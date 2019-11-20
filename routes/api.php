@@ -28,3 +28,10 @@ Route::get('listarProfession','API\UserController@listarProfession');
 Route::get('listarUsuarios','API\UserController@listarUsuarios');
 Route::delete('eliminarUsuario/{id}','API\UserController@eliminarUsuario');
 Route::put('actualizarUsuario/{id}','API\UserController@actualizarUsuario');
+//crud-lima-2
+Route::post('saveClient','API\UserController@saveClient');
+Route::get('getState','API\UserController@getState');
+Route::get('chooseCity/{id}','API\UserController@chooseCity');
+Route::get('getClients','API\UserController@getClients');
+Route::delete('deleteClient/{id}','API\UserController@deleteClient');
+Route::get('getClient/{id}','API\UserController@getClient');

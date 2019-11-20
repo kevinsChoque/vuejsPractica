@@ -7,6 +7,9 @@ use App\Http\Controllers\Controller;
 use App\Users;
 use App\CrudUsuario;
 use App\CrudProfesion;
+use App\Client;
+use App\State;
+use App\City;
 
 class UserController extends Controller
 {
@@ -194,5 +197,42 @@ class UserController extends Controller
         $user->update($request->all());
 
         return ['message' => 'el usuario a sido actualizado al tope'];
+    }
+
+    public function saveClient(Request $request)
+    {
+        return Client::create($request->all());
+    }
+
+    public function getState()
+    {
+        return State::all();
+    }
+
+    public function chooseCity(Request $request,$id)
+    {
+        return City::where("id_state","=",$id)->get();
+        // return $id;
+    }
+
+    public function getClients()
+    {
+        return Client::with('city','city.state')->get();
+        // return Client::all();
+    }
+
+    public function deleteClient($id)
+    {
+        $client = Client::findOrFail($id);
+        $client->delete();
+        return ['message' => 'client deleted'];
+    }    
+
+    public function getClient($id)
+    {
+        // $client = Client::where('id',$id)->first();
+        $client = Client::where('id',$id)->with('city','city.state')->first();
+        // $user->posts()->where('active', 1)->get();
+        return $client;
     }
 }

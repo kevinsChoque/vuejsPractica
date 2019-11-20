@@ -49,6 +49,9 @@ let routes = [
     { path: '/profile', component: require('./components/Profile.vue').default },
 
     { path: '/EjercicioLima', component: require('./components/CrudConVariosComp/DescripcionEjercicio.vue').default },
+    { path: '/EjercicioLima2', component: require('./components/CrudLima/listar.vue').default },
+    { path: '/EjercicioLima2Formulario', component: require('./components/CrudLima/formulario.vue').default },
+    { path: '/EjercicioLima2Edit/:id', component: require('./components/CrudLima/editar.vue').default }
   ]
 
 const router = new VueRouter({

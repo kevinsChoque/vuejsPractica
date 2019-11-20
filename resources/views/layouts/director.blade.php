@@ -9,7 +9,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <title>AdminLTE 3 | Starter</title>
+  <title>DOCENTE</title>
   <meta name="csrf-token" value="{{ csrf_token() }}" />
 {{-- <link rel="stylesheet" href="/css/app.css"> --}}
 <link href="{{ mix('css/app.css') }}" type="text/css" rel="stylesheet" />
@@ -45,7 +45,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <a href="index3.html" class="brand-link">
       <img src="{{asset('img/img2.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
-      <span class="brand-text font-weight-light">AdminLTE 3</span>
+      <span class="brand-text font-weight-light">DIRECTOR</span>
     </a>
 
     <!-- Sidebar -->
@@ -68,53 +68,59 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <li class="nav-item">
                     <router-link to="/EjercicioLima" class="nav-link">
                         <i class="fas fa-tachometer-alt nav-icon blue"></i>
-                        <p>Ejercicio Lima</p>
+                        <p>AULA VIRTUAL</p>
+                    </router-link>
+                </li>
+                <li class="nav-item has-treeview menu-open">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-cog green"></i>
+                        <p>REPOSITORIO<i class="right fas fa-angle-left"></i></p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <router-link to="/users" class="nav-link">
+                                <i class="nav-icon fas fa-users"></i>
+                                <p>Subir archivo</p>
+                            </router-link>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-cog"></i>
+                                <p>Ver archivos</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-cog"></i>
+                                <p>Enviar a revision</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-cog"></i>
+                                <p>Solicitar cambio</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <router-link to="/dashboard" class="nav-link">
+                        <i class="fas fa-tachometer-alt nav-icon blue"></i>
+                        <p>SIREMAP</p>
                     </router-link>
                 </li>
                 <li class="nav-item">
-                    <router-link to="/EjercicioLima2" class="nav-link">
-                        <i class="fas fa-tachometer-alt nav-icon blue"></i>
-                        <p>E.Lima 2° oportu.</p>
+                    <router-link to="/developer" class="nav-link">
+                        <i class="fas fa-cogs nav-icon"></i>
+                        <p>SINIERA</p>
                     </router-link>
                 </li>
-            <li class="nav-item has-treeview ">
-                <a href="#" class="nav-link">
-                    <i class="nav-icon fas fa-cog green"></i>
-                    <p>Management<i class="right fas fa-angle-left"></i></p>
-                </a>
-                <ul class="nav nav-treeview">
-                    <li class="nav-item">
-                        <router-link to="/users" class="nav-link">
-                            <i class="nav-icon fas fa-users"></i>
-                            <p>Users</p>
-                        </router-link>
-                    </li>
-                    {{-- <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="nav-icon fas fa-cog"></i>
-                            <p>new 2</p>
-                        </a>
-                    </li> --}}
-                </ul>
-            </li>
-            <li class="nav-item">
-                <router-link to="/dashboard" class="nav-link">
-                    <i class="fas fa-tachometer-alt nav-icon blue"></i>
-                    <p>Dashboard</p>
-                </router-link>
-            </li>
-            <li class="nav-item">
-              <router-link to="/developer" class="nav-link">
-                  <i class="fas fa-cogs nav-icon"></i>
-                  <p>developers</p>
-              </router-link>
-            </li>
-            <li class="nav-item">
-                <router-link to="/profile" class="nav-link">
-                    <i class="fas fa-user-tie nav-icon orange"></i>
-                    <p>Profile</p>
-                </router-link>
-            </li>
+                <li class="nav-item">
+                    <router-link to="/profile" class="nav-link">
+                        <i class="fas fa-user-tie nav-icon orange"></i>
+                        <p>SIERA</p>
+                    </router-link>
+                </li>
             <li class="nav-item">
                 <a href="#" class="nav-link">
                     <i class="nav-icon fas fa-th red"></i>
@@ -135,7 +141,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <div class="content">
       <div class="container-fluid">
         
-        <router-view></router-view>
+        <router-view>
+                
+        </router-view>
         {{-- <vue-progress-bar></vue-progress-bar> --}}
         <!-- /.row -->
       </div><!-- /.container-fluid -->

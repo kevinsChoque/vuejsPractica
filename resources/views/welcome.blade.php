@@ -15,4 +15,7 @@
         <script src="{{ mix('js/app.js') }}" type="text/javascript"></script>
     </body>
 </html> --}}
-@extends('layouts.master')
+@extends('layouts.'.Session::get('template'))
+{{-- {{Session::get('dni')}} --}}
+{{-- @extends('layouts.master') --}}
+
