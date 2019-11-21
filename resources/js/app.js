@@ -38,7 +38,10 @@ Vue.use(VueRouter);
 //   failedColor: 'red',
 //   height: '3px'
 // });
-
+//------------------------------------------------director
+Vue.component('template-director', require('./components/director/template.vue').default);
+Vue.component('datos-ie', require('./components/director/datosIe.vue').default);
+//------------------------------------------------
 Vue.component('crud-formulario', require('./components/CrudConVariosComp/Formulario.vue').default);
 Vue.component('crud-tabla-usuarios', require('./components/CrudConVariosComp/TablaUsuarios.vue').default);
 

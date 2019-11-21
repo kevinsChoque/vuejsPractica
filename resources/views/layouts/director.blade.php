@@ -63,10 +63,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-          <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
+               <li class="nav-item">
+                    <router-link to="/EjercicioLima" class="nav-link borrar">
+                        <i class="fas fa-tachometer-alt nav-icon blue"></i>
+                        <p>INICIO</p>
+                    </router-link>
+                </li>
                 <li class="nav-item">
-                    <router-link to="/EjercicioLima" class="nav-link">
+                    <router-link to="/EjercicioLima" class="nav-link borrar">
                         <i class="fas fa-tachometer-alt nav-icon blue"></i>
                         <p>AULA VIRTUAL</p>
                     </router-link>
@@ -121,12 +125,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <p>SIERA</p>
                     </router-link>
                 </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">
-                    <i class="nav-icon fas fa-th red"></i>
-                    <p>log out<span class="right badge badge-danger">New</span></p>
-                </a>
-            </li>
+                <li class="nav-item">
+                        <router-link to="/profile" class="nav-link">
+                            <i class="fas fa-user-tie nav-icon orange"></i>
+                            <p>SCALE REGIONAL</p>
+                        </router-link>
+                    </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-th red"></i>
+                        <p>log out<span class="right badge badge-danger">New</span></p>
+                    </a>
+                </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
@@ -140,11 +150,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Main content -->
     <div class="content">
       <div class="container-fluid">
-        
+        <div class="cajonBorrar">
+            <template-director></template-director>
+        </div>
         <router-view>
                 
         </router-view>
-        {{-- <vue-progress-bar></vue-progress-bar> --}}
         <!-- /.row -->
       </div><!-- /.container-fluid -->
     </div>
@@ -165,5 +176,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <!-- ./wrapper -->
 {{-- <script src="/js/app.js"></script> --}}
 <script src="{{ mix('js/app.js') }}" type="text/javascript"></script>
+<script>
+    $('.borrar').on('click',function(){
+        $('.cajonBorrar').css('display','none');
+    })
+</script>
 </body>
 </html>
