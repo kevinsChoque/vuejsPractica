@@ -89,15 +89,21 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                <li class="nav-item">
-                    <router-link to="/EjercicioLima" class="nav-link borrar">
-                        <i class="fas fa-home"></i>
-                        <p>&nbsp;&nbsp; INICIO </p>
+                    <router-link to="/Inicio" class="nav-link borrar">
+                        <i class="fas fa-tachometer-alt nav-icon blue"></i>
+                        <p>INICIO</p>
                     </router-link>
                 </li>
                 <li class="nav-item">
                     <router-link to="/EjercicioLima" class="nav-link borrar">
                         <i class="fas fa-vr-cardboard"></i>
                         <p>&nbsp;&nbsp;AULA VIRTUAL</p>
+                    </router-link>
+                </li>
+                <li class="nav-item">
+                    <router-link to="/asignarEncargado" class="nav-link borrar">
+                        <i class="fas fa-tachometer-alt nav-icon blue"></i>
+                        <p>ASIGNAR ENCARGADO</p>
                     </router-link>
                 </li>
                 <li class="nav-item has-treeview menu-open">
@@ -107,29 +113,29 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <router-link to="/users" class="nav-link">
-                                <i class="nav-icon fas fa-upload"></i>
-                                <p>Subir archivo</p>
+                            <router-link to="/gestionArchivos" class="nav-link borrar">
+                                <i class="nav-icon fas fa-users"></i>
+                                <p>Gestion de archivo(I.E.)</p>
                             </router-link>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-eye"></i>
-                                <p>Ver archivos</p>
+                                <i class="nav-icon fas fa-cog"></i>
+                                <p>Gestion archivos(Docente)</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-check-double"></i>
-                                <p>Enviar a revision</p>
+                                <i class="nav-icon fas fa-cog"></i>
+                                <p>Gestion de carpetas</p>
                             </a>
                         </li>
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-exchange-alt"></i>
                                 <p>Solicitar cambio</p>
                             </a>
-                        </li>
+                        </li> --}}
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -156,24 +162,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             <p>&nbsp;&nbsp;SCALE REGIONAL</p>
                         </router-link>
                     </li>
-                <li class="nav-item">
+                {{-- <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-sign-out-alt"></i>
 
                         <p>Cerrar Sesion</p>
                     </a>
-                </li>
+                </li> --}}
         </ul>
       </nav>
-      <!-- /.sidebar-menu -->
     </div>
-    <!-- /.sidebar -->
   </aside>
-
-  <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
-
-    <!-- Main content -->
     <div class="content">
       <div class="container-fluid">
         <div class="cajonBorrar">
@@ -182,21 +182,16 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <router-view>
                 
         </router-view>
-        <!-- /.row -->
       </div><!-- /.container-fluid -->
     </div>
-    <!-- /.content -->
   </div>
-  <!-- /.content-wrapper -->
-
-  <!-- Main Footer -->
   <footer class="main-footer">
     <!-- To the right -->
     <div class="float-right d-none d-sm-inline">
-      DGP
+      Apurimac-abancay
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2019 <a href="http://www.dreapurimac.gob.pe/inicio/">Dirección Regional de Educación</a>.</strong> Todos los Derechos Reservados.
+    <strong>Copyright &copy; 2014-2018 <a href="https://adminlte.io">DREA</a>.</strong> La educacion es lo primero.
   </footer>
 </div>
 <!-- ./wrapper -->
