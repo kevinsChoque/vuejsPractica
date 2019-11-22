@@ -41,15 +41,24 @@ Vue.use(VueRouter);
 //------------------------------------------------director
 Vue.component('template-director', require('./components/director/template.vue').default);
 Vue.component('datos-ie', require('./components/director/datosIe.vue').default);
+
 Vue.component('template-docente', require('./components/docente/templateDoc.vue').default);
 Vue.component('datos-do', require('./components/docente/datosdo.vue').default);
 Vue.component('template-especialista', require('./components/especialista/templateEsp.vue').default);
 Vue.component('datos-es', require('./components/especialista/datoses.vue').default);
+
+Vue.component('load-file', require('./components/director/gestionArchivos/loadFile.vue').default);
+Vue.component('file-ie', require('./components/director/gestionArchivos/fileIe.vue').default);
+Vue.component('file-revision', require('./components/director/gestionArchivos/fileRevision.vue').default);
 //------------------------------------------------
 Vue.component('crud-formulario', require('./components/CrudConVariosComp/Formulario.vue').default);
 Vue.component('crud-tabla-usuarios', require('./components/CrudConVariosComp/TablaUsuarios.vue').default);
 
 let routes = [
+    { path: '/Inicio', component: require('./components/director/template.vue').default },
+    { path: '/gestionArchivos', component: require('./components/director/gestionArchivos/gestionArchivos.vue').default },
+    { path: '/asignarEncargado', component: require('./components/director/asignarEncargado.vue').default },
+
     { path: '/dashboard', component: require('./components/Dashboard.vue').default },
     { path: '/developer', component: require('./components/Developer.vue').default },
     { path: '/users', component: require('./components/Users.vue').default },
