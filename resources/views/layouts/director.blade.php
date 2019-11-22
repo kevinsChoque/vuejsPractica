@@ -47,12 +47,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <img src="#" alt="">Jose Antonio
           </a>
           <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="javascript:;"> Perfil</a>
-          <a class="dropdown-item" href="javascript:;">
-          <span>Editar Datos</span>
-          </a>
-          <a class="dropdown-item" href="javascript:;">Manual</a>
-          <a class="dropdown-item" href="login.html"><i class="fa fa-sign-out-alt"></i> Cerrar Sesión</a>
+          <a class="dropdown-item" href="javascript:;"><i class="fas fa-user"></i> &nbsp Perfil</a>
+          <a class="dropdown-item" href="javascript:;"> <i class="fas fa-edit"></i>&nbsp Editar Datos</a>
+          
+          <a class="dropdown-item" href="javascript:;"><i class="fas fa-clipboard-check"></i> &nbsp Manual</a>
+          <a class="dropdown-item" href="login.html"><i class="fa fa-sign-out-alt"></i> &nbsp Cerrar Sesión</a>
           </div>
           </li>
 
@@ -68,6 +67,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
            style="opacity: .8">
       <span class="brand-text font-weight-light">SIREA - DREA</span>
     </a>
+
 
     <!-- Sidebar -->
     <div class="sidebar">

@@ -41,6 +41,8 @@ Vue.use(VueRouter);
 //------------------------------------------------director
 Vue.component('template-director', require('./components/director/template.vue').default);
 Vue.component('datos-ie', require('./components/director/datosIe.vue').default);
+Vue.component('template-docente', require('./components/docente/templateDoc.vue').default);
+Vue.component('datos-do', require('./components/docente/datosdo.vue').default);
 //------------------------------------------------
 Vue.component('crud-formulario', require('./components/CrudConVariosComp/Formulario.vue').default);
 Vue.component('crud-tabla-usuarios', require('./components/CrudConVariosComp/TablaUsuarios.vue').default);
