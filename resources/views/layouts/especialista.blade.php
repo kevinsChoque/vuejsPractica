@@ -9,7 +9,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <title>DOCENTE</title>
+  <title>ESPECIALISTA</title>
   <meta name="csrf-token" value="{{ csrf_token() }}" />
 {{-- <link rel="stylesheet" href="/css/app.css"> --}}
 <link href="{{ mix('css/app.css') }}" type="text/css" rel="stylesheet" />
@@ -39,7 +39,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
     <li class="nav-item dropdown open" style="padding-left: 15px;">
           <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
-          <img src="#" alt="">Jimmy Erick
+          <img src="#" alt="">Luis Edwin
           </a>
           <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="javascript:;"><i class="fas fa-user"></i> &nbsp Perfil</a>
@@ -65,14 +65,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
       <div class="image">
-          <img src="{{asset('img/docente.png')}}" class="img-circle elevation-2" alt="User Image">
+          <img src="{{asset('img/espe.png')}}" class="img-circle elevation-2" alt="User Image">
         </div>
         
         <div class="info">
           <a href="#" class="d-block">Bienvenido,</a>
-          <a href="#" class="d-block"><strong>Valer Quispe,<br> Jimmy Erick</strong></a>
-          <a style="color:rgb(212, 192, 187);"> Docente</a> <br>
-          <a style="color:rgb(212, 192, 187);"> <strong>I.E Rosario</strong></a>
+          <a href="#" class="d-block"><strong>Huarcaya Moreno,<br> Luis Edwin</strong></a>
+          <a style="color:rgb(212, 192, 187);"> Especialista</a> <br>
+          <a style="color:rgb(212, 192, 187);"> <strong>DREA</strong></a>
         </div>
       </div>
 
@@ -90,22 +90,122 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 
             <li class="nav-item has-treeview ">
                 <a href="#" class="nav-link">
-                    <i class="nav-icon fas fa-vr-cardboard"></i>
-                    <p>AULA VIRTUAL<i class="right fas fa-angle-left"></i></p>
+                    <i class="nav-icon fas fa-users"></i>
+                    <p>Administrar Usuarios<i class="right fas fa-angle-left"></i></p>
                 </a>
                 <ul class="nav nav-treeview">
                     <li class="nav-item">
                         <router-link to="/users" class="nav-link">
+                            <i class="nav-icon fas fa-user"></i>
+                            <p>Agregar Usuario</p>
+                        </router-link>
+                    </li>
+                    <li class="nav-item">
+                        <router-link to="/users" class="nav-link">
+                            <i class="nav-icon fas fa-user-friends"></i>
+                            <p>Ver Usuarios</p>
+                        </router-link>
+                    </li>
+                    
+                </ul>
+            </li>
+
+            <li class="nav-item has-treeview ">
+                <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-folder"></i>
+                    <p>Repositorio<i class="right fas fa-angle-left"></i></p>
+                </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        <router-link to="/users" class="nav-link">
+                            <i class="nav-icon fas fa-boxes"></i>
+                            <p>Ver Archivos</p>
+                        </router-link>
+                    </li>
+                    <li class="nav-item">
+                        <router-link to="/users" class="nav-link">
+                            <i class="nav-icon fas fa-check"></i>
+                            <p>Validar Archivos</p>
+                        </router-link>
+                    </li>
+                    <li class="nav-item">
+                        <router-link to="/users" class="nav-link">
                             <i class="nav-icon fas fa-clipboard"></i>
-                            <p>Unidades</p>
+                            <p>Realizar Constancia</p>
                         </router-link>
                     </li>
                     <li class="nav-item">
                         <router-link to="/users" class="nav-link">
                             <i class="nav-icon fas fa-book-open"></i>
-                            <p>Sesiones</p>
+                            <p>Listar Archivos</p>
                         </router-link>
                     </li>
+                    <li class="nav-item">
+                        <router-link to="/users" class="nav-link">
+                            <i class="nav-icon fas fa-upload"></i>
+                            <p>Subir Por DIrectores</p>
+                        </router-link>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav-item has-treeview ">
+                <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-folder"></i>
+                    <p>SIREMAP<i class="right fas fa-angle-left"></i></p>
+                </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        <router-link to="/users" class="nav-link">
+                            <i class="nav-icon fas fa-clipboard"></i>
+                            <p>Revisar Fichas</p>
+                        </router-link>
+                    </li>
+                    <li class="nav-item">
+                        <router-link to="/users" class="nav-link">
+                            <i class="nav-icon fas fa-book-open"></i>
+                            <p>Historico de Fichas</p>
+                        </router-link>
+                    </li>
+                    
+                </ul>
+            </li>
+
+            <li class="nav-item has-treeview ">
+                <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-folder"></i>
+                    <p>SINIERA<i class="right fas fa-angle-left"></i></p>
+                </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        <router-link to="/users" class="nav-link">
+                            <i class="nav-icon fas fa-clipboard"></i>
+                            <p>Validar Información</p>
+                        </router-link>
+                    </li>
+                    <li class="nav-item">
+                        <router-link to="/users" class="nav-link">
+                            <i class="nav-icon fas fa-book-open"></i>
+                            <p>Realizar Observación</p>
+                        </router-link>
+                    </li>
+                    
+                </ul>
+            </li>
+
+            <li class="nav-item has-treeview ">
+                <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-folder"></i>
+                    <p>SIERA<i class="right fas fa-angle-left"></i></p>
+                </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        <router-link to="/users" class="nav-link">
+                            <i class="nav-icon fas fa-clipboard"></i>
+                            <p>Ver Instituciones</p>
+                        </router-link>
+                    </li>
+                    
                     
                 </ul>
             </li>
@@ -118,43 +218,27 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <ul class="nav nav-treeview">
                     <li class="nav-item">
                         <router-link to="/users" class="nav-link">
-                            <i class="nav-icon fab fa-cuttlefish"></i>
-                            <p>Monitoreo</p>
+                            <i class="nav-icon fas fa-table"></i>
+                            <p>Reporte 1</p>
                         </router-link>
                     </li>
                     <li class="nav-item">
                         <router-link to="/users" class="nav-link">
-                            <i class="nav-icon fas fa-book-reader"></i>
-                            <p>Historico</p>
+                            <i class="nav-icon fas fa-table"></i>
+                            <p>Reporte 2</p>
                         </router-link>
                     </li>
                     <li class="nav-item">
                         <router-link to="/users" class="nav-link">
-                            <i class="nav-icon fas fa-clipboard-check"></i>
-                            <p>Solicitar Cambio</p>
+                            <i class="nav-icon fas fa-table"></i>
+                            <p>Reporte 3</p>
                         </router-link>
                     </li>
                     
                 </ul>
             </li>
 
-            <li class="nav-item has-treeview ">
-                <a href="#" class="nav-link">
-                    <i class="nav-icon fas fa-id-badge"></i>
-                    <p>Solicitar Cambio de Correo<i class="right fas fa-angle-left"></i></p>
-                </a>
-                <ul class="nav nav-treeview">
-                    <li class="nav-item">
-                        <router-link to="/users" class="nav-link">
-                            <i class="nav-icon fab fa-cuttlefish"></i>
-                            <p>Monitoreo</p>
-                        </router-link>
-                    </li>
-                    
-                    
-                </ul>
-            </li>
-
+            
             
             <li class="nav-item">
                     <a href="#" class="nav-link">
@@ -176,8 +260,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Main content -->
     <div class="content">
       <div class="container-fluid">
-        <div class="cajonBorrar2">
-          <template-docente></template-docente>
+        <div class="cajonBorrar3">
+          <template-especialista></template-especialista>
         </div>
 
         <router-view>
@@ -206,7 +290,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 <script>
     $('.borrar').on('click',function(){
-        $('.cajonBorrar2').css('display','none');
+        $('.cajonBorrar3').css('display','none');
     })
 </script>
 

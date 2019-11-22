@@ -43,6 +43,8 @@ Vue.component('template-director', require('./components/director/template.vue')
 Vue.component('datos-ie', require('./components/director/datosIe.vue').default);
 Vue.component('template-docente', require('./components/docente/templateDoc.vue').default);
 Vue.component('datos-do', require('./components/docente/datosdo.vue').default);
+Vue.component('template-especialista', require('./components/especialista/templateEsp.vue').default);
+Vue.component('datos-es', require('./components/especialista/datoses.vue').default);
 //------------------------------------------------
 Vue.component('crud-formulario', require('./components/CrudConVariosComp/Formulario.vue').default);
 Vue.component('crud-tabla-usuarios', require('./components/CrudConVariosComp/TablaUsuarios.vue').default);
