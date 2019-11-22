@@ -64,7 +64,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                <li class="nav-item">
-                    <router-link to="/EjercicioLima" class="nav-link borrar">
+                    <router-link to="/Inicio" class="nav-link borrar">
                         <i class="fas fa-tachometer-alt nav-icon blue"></i>
                         <p>INICIO</p>
                     </router-link>
@@ -75,6 +75,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <p>AULA VIRTUAL</p>
                     </router-link>
                 </li>
+                <li class="nav-item">
+                    <router-link to="/asignarEncargado" class="nav-link borrar">
+                        <i class="fas fa-tachometer-alt nav-icon blue"></i>
+                        <p>ASIGNAR ENCARGADO</p>
+                    </router-link>
+                </li>
                 <li class="nav-item has-treeview menu-open">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-cog green"></i>
@@ -82,29 +88,29 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <router-link to="/users" class="nav-link">
+                            <router-link to="/gestionArchivos" class="nav-link borrar">
                                 <i class="nav-icon fas fa-users"></i>
-                                <p>Subir archivo</p>
+                                <p>Gestion de archivo(I.E.)</p>
                             </router-link>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-cog"></i>
-                                <p>Ver archivos</p>
+                                <p>Gestion archivos(Docente)</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-cog"></i>
-                                <p>Enviar a revision</p>
+                                <p>Gestion de carpetas</p>
                             </a>
                         </li>
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-cog"></i>
                                 <p>Solicitar cambio</p>
                             </a>
-                        </li>
+                        </li> --}}
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -131,23 +137,17 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             <p>SCALE REGIONAL</p>
                         </router-link>
                     </li>
-                <li class="nav-item">
+                {{-- <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-th red"></i>
                         <p>log out<span class="right badge badge-danger">New</span></p>
                     </a>
-                </li>
+                </li> --}}
         </ul>
       </nav>
-      <!-- /.sidebar-menu -->
     </div>
-    <!-- /.sidebar -->
   </aside>
-
-  <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
-
-    <!-- Main content -->
     <div class="content">
       <div class="container-fluid">
         <div class="cajonBorrar">
@@ -156,21 +156,16 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <router-view>
                 
         </router-view>
-        <!-- /.row -->
       </div><!-- /.container-fluid -->
     </div>
-    <!-- /.content -->
   </div>
-  <!-- /.content-wrapper -->
-
-  <!-- Main Footer -->
   <footer class="main-footer">
     <!-- To the right -->
     <div class="float-right d-none d-sm-inline">
-      Anything you want
+      Apurimac-abancay
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2014-2018 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+    <strong>Copyright &copy; 2014-2018 <a href="https://adminlte.io">DREA</a>.</strong> La educacion es lo primero.
   </footer>
 </div>
 <!-- ./wrapper -->
