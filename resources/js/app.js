@@ -44,8 +44,15 @@ Vue.component('datos-ie', require('./components/director/datosIe.vue').default);
 
 Vue.component('template-docente', require('./components/docente/templateDoc.vue').default);
 Vue.component('datos-do', require('./components/docente/datosdo.vue').default);
+Vue.component('unidad', require('./components/docente/unidades/unidad.vue').default);
+Vue.component('lista-cursos', require('./components/docente/unidades/listaCursos.vue').default);
 Vue.component('template-especialista', require('./components/especialista/templateEsp.vue').default);
 Vue.component('datos-es', require('./components/especialista/datoses.vue').default);
+Vue.component('agregar-sesion', require('./components/docente/sesiones/agregarSesion.vue').default);
+Vue.component('lista-sesion', require('./components/docente/sesiones/listaSesiones.vue').default);
+
+Vue.component('agregar-recurso', require('./components/docente/recursos/agregarRecurso.vue').default);
+Vue.component('lista-recurso', require('./components/docente/recursos/listarRecurso.vue').default);
 
 Vue.component('load-file', require('./components/director/gestionArchivos/loadFile.vue').default);
 Vue.component('file-ie', require('./components/director/gestionArchivos/fileIe.vue').default);
@@ -58,6 +65,9 @@ let routes = [
     { path: '/Inicio', component: require('./components/director/template.vue').default },
     { path: '/gestionArchivos', component: require('./components/director/gestionArchivos/gestionArchivos.vue').default },
     { path: '/agregarUnidades', component: require('./components/docente/unidades/agregarUnidades.vue').default },
+    { path: '/gestionSesiones', component: require('./components/docente/sesiones/gestionSesiones.vue').default },
+    { path: '/detalleSesiones', component: require('./components/docente/sesiones/detalleSesiones.vue').default },
+    { path: '/gestionRecursos', component: require('./components/docente/recursos/gestionRecursos.vue').default },
     { path: '/asignarEncargado', component: require('./components/director/asignarEncargado.vue').default },
 
     { path: '/dashboard', component: require('./components/Dashboard.vue').default },

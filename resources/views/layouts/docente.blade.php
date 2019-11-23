@@ -238,19 +238,19 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         </router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link to="/users" class="nav-link">
+                        <router-link to="/gestionSesiones" class="nav-link borrar">
                             <i class="nav-icon fas fa-book-open"></i>
                             <p>Sesiones</p>
                         </router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link to="/users" class="nav-link">
+                        <router-link to="/detalleSesiones" class="nav-link borrar">
                             <i class="nav-icon fas fa-book-open"></i>
                             <p>Detalle Sesiones</p>
                         </router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link to="/users" class="nav-link">
+                        <router-link to="/gestionRecursos" class="nav-link borrar">
                             <i class="nav-icon fas fa-book-open"></i>
                             <p>Recursos</p>
                         </router-link>
