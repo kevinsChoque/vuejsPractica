@@ -38,14 +38,14 @@
 			<!-- small box -->
 			<div class="small-box bg-success">
 				<div class="inner">
-				<p>IE M=IE</p>
-				<p>IE N=IE</p>
-				<p>IE P=IE</p>
+				<p>Finalizado = <strong>13</strong></p>
+				<p>En Proceso = <strong>10</strong></p>
+				<p>No Iniciado = <strong>50</strong></p>
 				</div>
 				<div class="icon">
 				<i class="ion ion-person-add"></i>
 				</div>
-				<a href="#" class="small-box-footer">Más Información <i class="fa fa-arrow-circle-right"></i></a>
+				<a href="#" class="small-box-footer">Monitoreo Instituciones</a>
 			</div>
 			</div>
 			
@@ -54,15 +54,14 @@
 			<!-- small box -->
 			<div class="small-box bg-warning">
 				<div class="inner">	
-
-				<p>DCTE M=DCTE</p>
-				<p>MONITOREADOS</p>
-				<p>DCTE N=DCTE NO</p>	
+				<p>Finalizado = <strong>110</strong></p>
+				<p>En Proceso = <strong>70</strong></p>
+				<p>No Iniciado = <strong>50</strong></p>	
 				</div>
 				<div class="icon">
 				<i class="ion ion-pie-graph"></i>
 				</div>
-				<a href="#" class="small-box-footer">Más Información <i class="fa fa-arrow-circle-right"></i></a>
+				<a href="#" class="small-box-footer">Monitoreo Docentes</a>
 			</div>
 			</div>
 
@@ -72,12 +71,12 @@
 						<div class="inner">
 						<h3>20<sup style="font-size: 20px"></sup></h3>
 
-						<p>I.E. Válida</p>
+						<p>I.E. Validadas</p>
 						</div>
 						<div class="icon">
 						<i class="ion ion-stats-bars"></i>
 						</div>
-						<a href="#" class="small-box-footer">Más Información<i class="fa fa-arrow-circle-right"></i></a>
+						<a href="#" class="small-box-footer">SINIERA<i class="fa fa-arrow-circle-right"></i></a>
 					</div>
 					</div>
 
@@ -87,12 +86,12 @@
 						<div class="inner">
 						<h3>20<sup style="font-size: 20px"></sup></h3>
 
-						<p>I.E. No Válida</p>
+						<p>I.E. No Validadas</p>
 						</div>
 						<div class="icon">
 						<i class="ion ion-stats-bars"></i>
 						</div>
-						<a href="#" class="small-box-footer">Más Información<i class="fa fa-arrow-circle-right"></i></a>
+						<a href="#" class="small-box-footer">SINIERA<i class="fa fa-arrow-circle-right"></i></a>
 					</div>
 					</div>
 
@@ -122,132 +121,170 @@
 
 
 			<div class="col-md-6">
-                <div class="card">
-                    <h5 class="card-header">
-                        <a data-toggle="collapse" href="#collapse-example21" aria-expanded="true" aria-controls="collapse-example21" id="heading-example" class="d-block">
-                            <i class="fa fa-chevron-down pull-right"></i>
-                            Reporte 1
-                        </a>
-                    </h5>
-                <div id="collapse-example21" class="collapse show" aria-labelledby="heading-example">
-                    <div class="card-body">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam ab rem, cum sit culpa ipsam dolor, sint, ratione repellendus magnam totam voluptates architecto odio illum temporibus in aut nam labore.</div>
-                    
-                    </div>
-                </div>
+					<div class="card card-info card-outline">
+					<div class="card-header p-2">
+						<div class="float-left"><strong>Reporte 1</strong></div>
+						<div class="float-right">
+							<button type="button" class="btn btn-sm py-0" data-widget="collapse"><i class="fa fa-minus"></i></button>
+							<button type="button" class="btn btn-sm py-0" data-widget="remove"><i class="fa fa-edit"></i></button>
+						</div>
+					</div>
+					<div class="card-body p-0">
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam ab rem, cum sit culpa ipsam dolor, sint, ratione repellendus magnam totam voluptates architecto odio illum temporibus in aut nam labore.
+					</div>
+				</div>				
 			</div>
 			
 			<div class="col-md-6">
-                <div class="card">
-                    <h5 class="card-header">
-                        <a data-toggle="collapse" href="#collapse-example20" aria-expanded="true" aria-controls="collapse-example20" id="heading-example" class="d-block">
-                            <i class="fa fa-chevron-down pull-right"></i>
-                            Reporte 2
-                        </a>
-                    </h5>
-                <div id="collapse-example20" class="collapse show" aria-labelledby="heading-example">
-                    <div class="card-body">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam ab rem, cum sit culpa ipsam dolor, sint, ratione repellendus magnam totam voluptates architecto odio illum temporibus in aut nam labore.</div>
-                    
+					<div class="card card-info card-outline">
+					<div class="card-header p-2">
+						<div class="float-left"><strong>Reporte 1</strong></div>
+						<div class="float-right">
+							<button type="button" class="btn btn-sm py-0" data-widget="collapse"><i class="fa fa-minus"></i></button>
+							<button type="button" class="btn btn-sm py-0" data-widget="remove"><i class="fa fa-edit"></i></button>
+						</div>
+					</div>
+					<div class="card-body p-0">
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam ab rem, cum sit culpa ipsam dolor, sint, ratione repellendus magnam totam voluptates architecto odio illum temporibus in aut nam labore.
+					</div>
+				</div>				
+			</div>
+			<div class="col-md-12">
+			<div class="alert alert-warning">
+				<h6 class="m-0">Alerta de Instituciones (olvide que tenia que escribir aqui)</h6>
+			</div>
+		</div>
+            <div class="col-md-12">
+            <div class="card card-info card-outline">
+        <div class="card-header p-2">
+            <div class="float-left"><strong>Instituciones Educativas</strong></div>
+            <div class="float-right">
+                <button type="button" class="btn btn-sm py-0" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                <button type="button" class="btn btn-sm py-0" data-widget="remove"><i class="fa fa-edit"></i></button>
+            </div>
+        </div>
+                <div class="card-body p-0">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <table class="table table-sm table-hover">
+							<thead>
+							<tr>
+								<th>Codigo</th>
+								<th>Codigo Modular</th>
+								<th>Nombre de Institución</th>
+								<th>Dirección</th>
+								<th>Provincia</th>
+								<th>Distrito</th>
+								<th>Nivel / Modalidad</th>
+								<th>Ugel - Superv.</th>
+								<th>Opciones</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>I00001</td>
+								<td>0404384</td>
+								<td>Maria Inmaculada</td>
+								
+								<td>Jirón Santa Rosa 120</td>
+								<td>Abancay</td>
+								<td>Abancay</td>
+								<td>Inicial- Jardín</td>
+								<td>Ugel Abancay</td>
+								<td>
+                                            <i class="fa fa-edit"></i>
+                                            <i class="fa fa-trash"></i>
+                                        </td>
+							</tr>
+							<tr>
+								<td>I00002</td>
+								<td>0285569</td>
+								<td>54008 Divino Maestro</td>
+								
+								<td>Avenida Centenario</td>
+								<td>Abancay</td>
+								<td>Abancay</td>
+								<td>Primaria</td>
+								<td>Ugel Abancay</td>
+								<td>
+                                            <i class="fa fa-edit"></i>
+                                            <i class="fa fa-trash"></i>
+                                        </td>
+							</tr>
+							<tr>
+								<td>I00003</td>
+								<td>0285619</td>
+								<td>54011 San Juan Bautista</td>
+								
+								<td>Llañucancha</td>
+								<td>Abancay</td>
+								<td>Abancay</td>
+								<td>Primaria</td>
+								<td>Ugel Abancay</td>
+								<td>
+                                            <i class="fa fa-edit"></i>
+                                            <i class="fa fa-trash"></i>
+                                        </td>
+							</tr>
+							<tr>
+								<td>I00004</td>
+								<td>1326123</td>
+								<td>Aduni</td>
+								
+								<td>Jr. Huancavelica 521</td>
+								<td>Abancay</td>
+								<td>Abancay</td>
+								<td>Secundaria</td>
+								<td>Ugel Abancay</td>
+								<td>
+                                            <i class="fa fa-edit"></i>
+                                            <i class="fa fa-trash"></i>
+                                        </td>
+							</tr>
+							<tr>
+								<td>I00005</td>
+								<td>0860973</td>
+								<td>America</td>
+								
+								<td>Jr. Huancavelica 548</td>
+								<td>Abancay</td>
+								<td>Abancay</td>
+								<td>Primaria</td>
+								<td>Ugel Abancay</td>
+								<td>
+                                            <i class="fa fa-edit"></i>
+                                            <i class="fa fa-trash"></i>
+                                        </td>
+							</tr>
+						</tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="col-md-12">
-            <div class="card">
-                <h5 class="card-header">
-                    <a data-toggle="collapse" href="#collapse-example2" aria-expanded="true" aria-controls="collapse-example2" id="heading-example" class="d-block">
-                        <i class="fa fa-chevron-down pull-right"></i>
-                        Intituciones Educativas
-                    </a>
-                </h5>
-                <div id="collapse-example2" class="collapse show" aria-labelledby="heading-example">
-                    <div class="card-body">
-                    <table class="table table-sm">
-                            <thead class="bg-info">
-                                <tr>
-                                    <th>Codigo</th>
-                                    <th>Nombre de Institución</th>
-                                    <th>Codigo Modular</th>
-                                    <th>Dirección</th>
-									<th>Provincia</th>
-									<th>Distrito</th>
-									<th>Nivel / Modalidad</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>I00001</td>
-                                    <td>Maria Inmaculada</td>
-                                    <td>0404384</td>
-									<td>Jirón Santa Rosa 120</td>
-									<td>Abancay</td>
-									<td>Abancay</td>
-                                    <td>Inicial- Jardín</td>
-                                </tr>
-                                <tr>
-									<td>I00002</td>
-									<td>54008 Divino Maestro</td>
-									<td>0285569</td>
-									<td>Avenida Centenario</td>
-									<td>Abancay</td>
-									<td>Abancay</td>
-									<td>Primaria</td>
-								</tr>
-								<tr>
-									<td>I00003</td>
-									<td>54011 San Juan Bautista</td>
-									<td>0285619</td>
-									<td>Llañucancha</td>
-									<td>Abancay</td>
-									<td>Abancay</td>
-									<td>Primaria</td>
-								</tr>
-								<tr>
-									<td>I00004</td>
-									<td>Aduni</td>
-									<td>1326123</td>
-									<td>Jr. Huancavelica 521</td>
-									<td>Abancay</td>
-									<td>Abancay</td>
-									<td>Secundaria</td>
-								</tr>
-								<tr>
-									<td>I00005</td>
-									<td>America</td>
-									<td>0860973</td>
-									<td>Jr. Huancavelica 548</td>
-									<td>Abancay</td>
-									<td>Abancay</td>
-									<td>Primaria</td>
-								</tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <div class="card-footer clearfix">                 
+                <div class="card-footer clearfix">                 
                         <ul class="pagination pagination-sm no-margin fa-pull-right">
-                            <li>
-                                <a href="#"> « </a>
+                            <li class="page-item">
+                                <a class="page-link" href="#"> « </a>
                             </li>
-                            <li>
-                                <a href="#"> 1 </a>
+                            <li class="page-item">
+                                <a class="page-link" href="#"> 1 </a>
                             </li>
-                            <li>
-                                <a href="#"> 2 </a>
+                            <li class="page-item">
+                                <a class="page-link" href="#"> 2 </a>
                             </li>
-                            <li>
-                                <a href="#"> 3 </a>
+                            <li class="page-item">
+                                <a class="page-link" href="#"> 3 </a>
                             </li>
-                            <li>
-                                <a href="#"> » </a>
+                            <li class="page-item"> 
+                                <a class="page-link" href="#"> » </a>
                             </li>
 
                         </ul>
                     </div>
-
-                </div>
-            </div>
+            </div> 
+			</div>
+			
+			
             </div>
             
             

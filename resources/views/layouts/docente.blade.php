@@ -36,18 +36,155 @@ scratch. This page gets rid of all links and provides the needed markup only.
         </button>
       </div>
     </div>
+    <ul class="navbar-nav ml-auto">
 
-    <li class="nav-item dropdown open" style="padding-left: 15px;">
-          <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
-          <img src="#" alt="">Jimmy Erick
-          </a>
-          <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="javascript:;"><i class="fas fa-user"></i> &nbsp Perfil</a>
-          <a class="dropdown-item" href="javascript:;"> <i class="fas fa-edit"></i>&nbsp Editar Datos</a>
-          <a class="dropdown-item" href="javascript:;"><i class="fas fa-clipboard-check"></i> &nbsp Manual</a>
-          <a class="dropdown-item" href="login.html"><i class="fa fa-sign-out-alt"></i> &nbsp Cerrar Sesión</a>
+<li class="nav-item dropdown">
+    <a class="nav-link" data-toggle="dropdown" href="#">
+      <i class="fas fa-bell" ></i>
+      <span class="badge badge-warning navbar-badge">3</span>
+    </a>
+    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+      <span class="dropdown-item dropdown-header">3 Notificaciones</span>
+      <div class="dropdown-divider"></div>
+      <a href="#" class="dropdown-item">
+        <i class="fas fa-envelope mr-2"></i> 3 Nuevos Mensajes
+      </a>
+      <div class="dropdown-divider"></div>
+      <a href="#" class="dropdown-item">
+        <i class="fas fa-users mr-2"></i> 8 Solicitudes de Amistad
+      </a>
+      <div class="dropdown-divider"></div>
+      <a href="#" class="dropdown-item">
+        <i class="fas fa-file mr-2"></i> 3 Nuevos Reportes
+      </a>
+      <div class="dropdown-divider"></div>
+      <a href="#" class="dropdown-item dropdown-footer">Ver Todas las Notificaciones</a>
+    </div>
+  </li>
+  
+
+
+<li class="nav-item dropdown">
+    <a class="nav-link" data-toggle="dropdown" href="#">
+      <i class="fas fa-comments"></i>
+      <span class="badge badge-danger navbar-badge">3</span>
+    </a>
+    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+      <a href="#" class="dropdown-item">
+        <!-- Message Start -->
+        <div class="media">
+          <img src="img/docente.png" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+          <div class="media-body">
+            <h3 class="dropdown-item-title">
+              Juan Pérez
+              <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+            </h3>
+            <p class="text-sm">Hola, Buenos Dias</p>
+            <p class="text-sm text-muted"><i class="fas fa-clock mr-1"></i> Hace 4 horas</p>
           </div>
-          </li>
+        </div>
+        <!-- Message End -->
+      </a>
+      <div class="dropdown-divider"></div>
+      <a href="#" class="dropdown-item">
+        <!-- Message Start -->
+        <div class="media">
+          <img src="img/carne.png" alt="User Avatar" class="img-size-50 img-circle mr-3">
+          <div class="media-body">
+            <h3 class="dropdown-item-title">
+              John Aquino
+              <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+            </h3>
+            <p class="text-sm">Todo Listo!</p>
+            <p class="text-sm text-muted"><i class="fas fa-clock mr-1"></i> Hace 5 horas</p>
+          </div>
+        </div>
+        <!-- Message End -->
+      </a>
+      <div class="dropdown-divider"></div>
+      <a href="#" class="dropdown-item">
+        <!-- Message Start -->
+        <div class="media">
+          <img src="img/espe.png" alt="User Avatar" class="img-size-50 img-circle mr-3">
+          <div class="media-body">
+            <h3 class="dropdown-item-title">
+              Raúl Gonzales
+              <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+            </h3>
+            <p class="text-sm">Aviso de Reunión</p>
+            <p class="text-sm text-muted"><i class="fas fa-clock mr-1"></i> Hace 6 horas</p>
+          </div>
+        </div>
+        <!-- Message End -->
+      </a>
+      <div class="dropdown-divider"></div>
+      <a href="#" class="dropdown-item dropdown-footer">Ver Todos los Mensajes</a>
+    </div>
+  </li>
+
+  <li class="nav-item dropdown">
+    <a class="nav-link" data-toggle="dropdown" href="#">
+      <i class="fas fa-user"></i>
+    </a>
+    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+      <a href="#" class="dropdown-item">
+        <!-- Message Start -->
+        <div class="media">
+          
+          <div class="media-body">
+            <h3 class="dropdown-item-title">
+            <i class="fas fa-user"></i>
+              &nbsp  Jimmy Erick
+              <span class="float-right text-sm text-danger"></span>
+            </h3>
+            <p class="text-sm">Docente</p>
+          </div>
+        </div>
+        <!-- Message End -->
+      </a>
+      <div class="dropdown-divider"></div>
+      <a href="#" class="dropdown-item">
+        <!-- Message Start -->
+        <div class="media">
+          
+          <div class="media-body">
+            <h3 class="dropdown-item-title">
+            <i class="fas fa-edit"></i>
+            &nbsp Editar Datos
+             </h3>
+             </div>
+        </div>
+        <!-- Message End -->
+      </a>
+      <div class="dropdown-divider"></div>
+      <a href="#" class="dropdown-item">
+        <!-- Message Start -->
+        <div class="media">              
+          <div class="media-body">
+            <h3 class="dropdown-item-title">
+            <i class="fas fa-clipboard-check"></i>
+            &nbsp&nbsp Manual                  
+              </h3>               
+           </div>
+        </div>
+        <!-- Message End -->
+      </a>
+      <div class="dropdown-divider"></div>
+      <a href="#" class="dropdown-item">
+        <!-- Message Start -->
+        <div class="media">              
+          <div class="media-body">
+            <h3 class="dropdown-item-title">
+            <i class="fa fa-sign-out-alt"></i>
+            &nbsp Cerrar Sesión                 
+              </h3>               
+           </div>
+        </div>
+        <!-- Message End -->
+      </a>
+  </li>
+
+    
   </nav>
   <!-- /.navbar -->
 
@@ -70,7 +207,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         
         <div class="info">
           <a href="#" class="d-block">Bienvenido,</a>
-          <a href="#" class="d-block"><strong>Valer Quispe,<br> Jimmy Erick</strong></a>
+          <h4 style="color:rgb(212, 192, 187);" href="#" class="d-block"><strong>Valer Quispe,<br> Jimmy Erick</strong></h4>
           <a style="color:rgb(212, 192, 187);"> Docente</a> <br>
           <a style="color:rgb(212, 192, 187);"> <strong>I.E Rosario</strong></a>
         </div>
@@ -95,7 +232,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </a>
                 <ul class="nav nav-treeview">
                     <li class="nav-item">
-                        <router-link to="/users" class="nav-link">
+                        <router-link to="/agregarUnidades" class="nav-link borrar">
                             <i class="nav-icon fas fa-clipboard"></i>
                             <p>Unidades</p>
                         </router-link>
@@ -104,6 +241,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <router-link to="/users" class="nav-link">
                             <i class="nav-icon fas fa-book-open"></i>
                             <p>Sesiones</p>
+                        </router-link>
+                    </li>
+                    <li class="nav-item">
+                        <router-link to="/users" class="nav-link">
+                            <i class="nav-icon fas fa-book-open"></i>
+                            <p>Detalle Sesiones</p>
+                        </router-link>
+                    </li>
+                    <li class="nav-item">
+                        <router-link to="/users" class="nav-link">
+                            <i class="nav-icon fas fa-book-open"></i>
+                            <p>Recursos</p>
                         </router-link>
                     </li>
                     

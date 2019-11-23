@@ -57,6 +57,7 @@ Vue.component('crud-tabla-usuarios', require('./components/CrudConVariosComp/Tab
 let routes = [
     { path: '/Inicio', component: require('./components/director/template.vue').default },
     { path: '/gestionArchivos', component: require('./components/director/gestionArchivos/gestionArchivos.vue').default },
+    { path: '/agregarUnidades', component: require('./components/docente/unidades/agregarUnidades.vue').default },
     { path: '/asignarEncargado', component: require('./components/director/asignarEncargado.vue').default },
 
     { path: '/dashboard', component: require('./components/Dashboard.vue').default },
